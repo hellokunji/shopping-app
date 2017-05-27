@@ -1,0 +1,338 @@
+*{
+	box-sizing: border-box;
+	font-family: cursive;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: rgba(0,0,0,0.03)
+}
+.mainApp{
+	width: 800px;
+	min-height: 500px;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+	background-color: white;
+	margin: 10px auto;
+}
+header{
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	height: 45px;
+	padding: 10px 20px;
+}
+header>div{
+	float: left;
+}
+.hLogo{
+	width: 30%;
+}
+.hLogo a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.hRight{
+	width: 70%;
+}
+.hRight a{
+    text-decoration: none;
+    display: block;
+    float: right;
+    margin-left: 25px;
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 0 12px;
+    border-radius: 5px;
+}
+.hRight a img{
+    width: 15px;
+    vertical-align: middle;
+}
+.hRight a span{
+    font-size: 12px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.main{
+    padding: 25px 20px;
+    height: 520px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.main>div{
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+
+}
+
+
+.products{
+}
+.pItem{
+    width: 33.33%;
+    float: left;
+    padding: 10px 10px;
+    border: 1px solid rgba(0,0,0,0.0);
+}
+.pItem:hover{
+    //border: 1px solid rgba(0,0,0,0.1);
+}
+.pItem>div{
+	display: block;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.pItem>div:hover{
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.2);
+}
+.pItem>div>a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.8);
+}
+.piImg{
+    height: 200px;
+    background-color: whitesmoke;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+.piImg img{
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.piDesc{
+    padding: 5px 10px;
+    display: -webkit-flex;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.pidLeft{
+    text-decoration: none;
+    width: 100%;
+    float: left;
+}
+.pidLeft h3{
+    font-size: 15px;
+    margin-bottom: 4px;
+    text-overflow: ellipsis;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.pidLeft p{
+    font-size: 12px;
+    color: green;
+}
+.pidRight{
+    text-decoration: none;
+    width: 25%;
+    float: left;
+    padding: 6px 0;
+}
+.pidRight>p:first-child{
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.pidRight>p:last-child{
+    text-decoration: none;
+    font-size: 10px;
+}
+.piActions{
+    height: 40px;
+}
+.piActions>button{
+    background: none;
+    border: none;
+    width: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+.piActions>button>img{
+    text-decoration: none;
+    width: 20px;
+}
+.piActions>button:first-child{
+    text-decoration: none;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.piActions>button:last-child{
+	    text-decoration: none;
+}
+.piActions>button:hover{
+	background-color: #e6e6e6;
+}
+
+
+
+
+
+
+.singleProducts{
+}
+.spTag{
+	width: 50%;
+    float: left;
+    padding-right: 50px;
+}
+.sptImg{
+	background-color: rgba(0,0,0,0.03);
+    padding: 40px;
+    height: 300px;
+    overflow: hidden;
+}
+.sptImg img{
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.spDesc{
+	width: 50%;
+	float: left;
+}
+.spdTitle{
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 4px;
+}
+.spdPrice{
+    font-size: 15px;
+    color: green;
+    margin-bottom: 10px;
+}
+.spdDesc{
+    font-size: 15px;
+}
+.spdActions{
+    text-decoration: none;
+    margin-top: 20px;
+}
+.spdActions div{
+	width: 50%;
+    float: left;
+}
+.spdActions>div:first-child{
+	padding-right: 5px;
+}
+.spdActions>div:last-child{
+	padding-left: 5px;
+}
+.spdActions div button{
+    width: 100%;
+    height: 35px;
+}
+.spdActions div button img{
+    width: 15px;
+    vertical-align: middle;
+}
+.spdActions div button span{
+    vertical-align: middle;
+    padding-left: 6px;
+}
+
+.spReview{
+	width: 100%;
+	float: left;
+}
+.spReview h3{
+	text-decoration: none;
+}
+.spForm{
+	text-decoration: none;
+}
+.spForm form{
+	text-decoration: none;
+}
+.spForm form input{
+		text-decoration: none;
+}
+.spForm form select{
+		text-decoration: none;
+}
+.spForm form button{
+		text-decoration: none;
+}
+.spList{
+	text-decoration: none;
+}
+.splItem{
+    margin: 10px 0;
+}
+.splItem h4{
+	text-decoration: none;
+}
+.spplUsername{
+	font-size: 15px;
+    color: grey;
+}
+.spplRate{
+    padding: 0 14px;
+    font-size: 14px;
+}
+.spplReviewTitle{
+	text-decoration: none;
+}
+.splItem p{
+	font-size: 14px;
+}
+
+
+
+.cart{
+    width: 100%;
+}
+.cart>h3{
+    font-size: 23px;
+}
+.cList{
+    margin-top: 20px;
+}
+.cl_item{
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    margin: 20px 0;
+}
+.cli_img{
+    width: 100px;
+    float: left;
+    height: 100px;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+.cli_img img{
+	text-decoration: none;
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+.cli_desc{
+	width: 500px;
+    float: left;
+    padding-left: 20px;
+}
+.cli_desc h4{
+
+	text-decoration: none;
+}
+.cli_desc >p{
+    text-decoration: none;
+    font-size: 14px;
+}
+.cli_desc>p:first-child{
+    color: green;
+}
+.cli_actions{
+    float: right;
+    width: 90px;
+}
+.cli_actions button{
+    height: 25px;
+    padding: 0px 10px;
+}
